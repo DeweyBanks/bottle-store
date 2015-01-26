@@ -47,3 +47,9 @@ gem 'devise'
 gem 'spree', '2.4.2'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
+gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => '2-4-stable'
+
+
+
+
+
