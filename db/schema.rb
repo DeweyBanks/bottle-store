@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150122201027) do
+ActiveRecord::Schema.define(version: 20150126162825) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -993,6 +993,7 @@ ActiveRecord::Schema.define(version: 20150122201027) do
     t.integer  "tax_category_id"
     t.datetime "updated_at"
     t.integer  "stock_items_count",                          default: 0,     null: false
+    t.decimal  "sale_price",        precision: 8,  scale: 2
   end
 
   add_index "spree_variants", ["deleted_at"], name: "index_spree_variants_on_deleted_at"
