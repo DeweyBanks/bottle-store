@@ -51,6 +51,3 @@ gem 'spree_fancy', :git => 'git://github.com/spree/spree_fancy.git', :branch => 
 gem 'spree_simple_sales', :path => '../spree_simple_sales'
 gem 'desk', '~> 1.0.3'
 
-
-
-

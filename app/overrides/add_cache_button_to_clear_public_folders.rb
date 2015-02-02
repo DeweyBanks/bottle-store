@@ -1,8 +1,8 @@
-Deface::Override.new(:virtual_path => 'spree/admin/general_settings/_form',
+Deface::Override.new(:virtual_path => 'spree/admin/general_settings/edit',
   :name => 'add_cache_button_to_clear_public_folders',
-  :insert_after => "[data-hook='general_settings_clear_cache']",
+  :insert_after =>  "[data-hook='admin_general_setting_input_seo_title']",
   :text => '
-      <div data-hook="general_settings_clear_cache">
-        <%= button Spree.t(:clear_cache), "ok", "button", id: "clear_cache" %>
+      <div class="container">
+        <h1>Hello World</h1>
       </div>
   ')
