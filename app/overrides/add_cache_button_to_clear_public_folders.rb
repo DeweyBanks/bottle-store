@@ -3,6 +3,25 @@ Deface::Override.new(:virtual_path => 'spree/admin/general_settings/edit',
   :insert_after =>  "[data-hook='admin_general_setting_input_seo_title']",
   :text => '
       <div class="container">
-        <h1>Hello World</h1>
+        <button type="button" onclick="clearCache("/public/test");">clear cache</button>
       </div>
   ')
+
+
+
+  # clearCache = function(dirPath) {
+  #     try { var files = fs.readdirSync(dirPath); }
+  #     catch(e) { return; }
+  #     if (files.length > 0)
+  #       for (var i = 0; i < files.length; i++) {
+  #         var filePath = dirPath + '/' + files[i];
+  #         if (fs.statSync(filePath).isFile())
+  #           fs.unlinkSync(filePath);
+  #         else
+  #           rmDir(filePath);
+  #       }
+  #     fs.rmdirSync(dirPath);
+  #   };
+
+
+
